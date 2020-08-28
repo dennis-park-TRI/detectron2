@@ -112,7 +112,7 @@ class ROIAlignTest(unittest.TestCase):
 
 
 def benchmark_roi_align():
-    from detectron2 import _C
+    from detectron2_C import _C
 
     def random_boxes(mean_box, stdev, N, maxsize):
         ret = torch.rand(N, 4) * stdev + torch.tensor(mean_box, dtype=torch.float)

@@ -120,7 +120,7 @@ def get_extensions():
 
     ext_modules = [
         extension(
-            "detectron2._C",
+            "detectron2_C._C",
             sources,
             include_dirs=include_dirs,
             define_macros=define_macros,

@@ -83,7 +83,7 @@ def collect_env_info():
         data.append(("detectron2", "failed to import"))
 
     try:
-        from detectron2 import _C
+        from detectron2_C import _C
     except ImportError:
         data.append(("detectron2._C", "failed to import"))
 
